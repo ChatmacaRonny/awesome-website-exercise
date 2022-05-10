@@ -4,43 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-}
-
-.Upper {
-    color: white;
-    padding: 36px;
-    display: flex;
-}
-
-.Middle {
-    background-color: white;
-    color: #1f2937;
-    padding: 36px;
-}
-
-.Quote {
-    background-color: #E5E7EB;
-    padding: 36px;
-}
-
-.Sign {
-
-    background-color: #3882F6;
-    color: #1f2937;
-    padding: 16px;
-    margin: auto;
-    border-radius: 6px;
-    max-width: 600px; 
-}
-
-footer {
-    padding: 36px;
-    color: white;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .Upper,
@@ -49,18 +13,150 @@ header {
     background-color: #1f2937;
 }
 
+
+/*All the top part(header)*/
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+
+
 a {
     text-decoration: none;
     color: white;
+    font-family: roboto, Arial;
 }
 
-img {
-    background-color: #6a6b6d;
-    width: 100px;
-    height: 100px;
+
+
+header .Right {
+    font-size: 12px;
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
 }
+
+.Right a {
+    color: #b0b2b6;
+    font-size: smaller;
+}
+
+
+
+.left-header a {
+    font-size: 24px;
+}
+
+.left-header, header .Right {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+form {
+    background-color: #1f2937;
+}
+
+input {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border: 0px;
+    border-radius: 3px;
+    font-size: small;
+    padding: 4px 16px;
+    font-size: 18px;
+}
+
+
+.Upper, header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/*All the Upper part of the website*/
+
+.Upper {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    column-gap: 85px;
+}
+
+
+
+.Upper .Title {
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+    max-width: 300px;
+    margin-bottom: -5px;
+    
+}
+
+.Upper .subtext {
+    display: flex;
+    color: #b0b2b6;
+    margin: 10px 0;
+    font-size: 18px;
+    max-width: 400px;
+}
+
+
+.right {
+    width: 500px;
+    height: auto;
+}
+
+
+
+.right img {
+    background-color: #6a6b6d;
+    width: auto;
+    height: auto;
+    aspect-ratio: 8/4;
+    display: block;
+}
+
+
+
+/* Middle part*/
+
+.Middle {
+    background-color: white;
+    color: #1f2937;
+    padding: 36px;
+}
+
+.Middle, p {
+    font-size: 18px;
+}
+
+
+.Middle .title {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 66px;
+    margin-top: 26px;
+    display: flex;
+    font-weight: bold;
+    font-size: 36px;
+    align-items: center;
+}
+
 
 .placeholder img {
+    width: 180px;
+    height: 180px;
     background-color:white;
     border: 2px solid #3882F6;
     aspect-ratio: 4/4;
@@ -73,26 +169,103 @@ img {
 
 .placeholder {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    gap: 50px;
+    margin: 0 13em;
+    column-gap: 50px;
 }
 
 
 .placeholder p {
-    max-width: 100px;
+    max-width: 180px;
     text-align: center;
 }
 
-.right img {
-    height: 100px;
-    width: 200px;
-    aspect-ratio: 4/4;
+
+/* Quote */
+
+.Quote {
     display: block;
+    background-color: #E5E7EB;
+    justify-content: center;
+    margin-bottom: auto;
+    padding: 50px;
 }
 
-.title {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 16px;
+
+.Quote .text {
+    max-width: 500px;
+    font-style: italic;
+    margin: auto;
+    font-size: 36px;
+    color: #6a6b6d;
 }
+
+.Quote .signature {
+    display: flex;
+    max-width: 500px;
+    margin: auto;
+    justify-content: flex-end;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+
+/*Sign up part*/
+
+.Sign {
+    display: flex;
+    background-color: #3882F6;
+    color: white;
+    padding: 26px 84px;
+    border-radius: 6px;
+    margin: 48px auto;
+    column-gap: 65px;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+.Sign .sign-text {
+    font-size: 18px;
+    color: #b0b2b6;
+}
+
+.Sign .sign-title {
+    font-weight: 700;
+    text-align: left;
+    font-size: 24px;
+}
+
+
+button {
+    color: white;
+    background-color: #3882F6;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    font-size: 11px;
+    padding: 4px 16px;
+    font-size: 18px;
+}
+
+
+button:hover {
+    background-color: #389af6;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    padding: 36px;
+    color: white;
+    margin-top: auto;
+    justify-content: center;
+}
+
+
+
